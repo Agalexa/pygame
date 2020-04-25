@@ -1,5 +1,47 @@
-Pygame space invaders
+Andrw Alexandrescu pygame space invader improvement
 
-Found a bug where I was accidentally causing the aliens to move a line ahead due to offscreen aliens progressing the movement mechanic
+Things I improved: 
+    - Made enemy movement synchronized and reorganized their structure into groups
+    - Increased enemy speed after each wave
+    - Added respawn functionality at end of a wave when a group is wiped out, included wave tracker
+    - Added score highlight to display score after certain number of points
+    - Added warning functionality for incoming boss fight
+    - Added Boss 
+    - Added fun sound effects, like a shotgun reloading sound when you're able to fire again and one for the boss fight
+    - Added scene of congratulations aftern beating boss
 
-just overcame my biggest roadblock so far. I was trying to develop a respawn mechanic where the aliens respawn in waves, so they wont spawn until all are destroyed and for whatever reason it seemed like my program was "stuck" in my if statement, causing the aliens to not be rendered correctly making it so they were frozen in place and unable to move. the solution took a long time to discover but it was very simple, all i had to do was alter the condition at the end of the if statement which would negate its cause, freeing my program and allowing the aliens to move and spawn as they should.
+This assignment was by far the most enjoyable for me to work on and I also feel like it's the one in which I learned the most and
+I think working on this assignment really helped me get a better understanding of the python langauge. I enjoyed this assignment so
+much because I felt like it was incredibly easy for me to see and understand my code in action. This is because of course 
+a video game is a highly visual project. But nonetheless, I gained a lot from seeing my code visualized in a very practical way. 
+One big learning moment for me in particular was the way in which python iterates over loops and how it handles certain conditions.
+When trying to configure the alien enemies to respawn after their group had been destroyed, I ran into an issue where my aliens were
+respawning, but they werent moving. It took me about 2 hours of messing around to come up with a solution, and it turns out my problem 
+was the fact I was stuck repeadedtly executing an if statement through a while loop because I didnt program a way to satisfy the if statement
+once you came to it.
+the solution was something like this:
+
+if (score_value%3 == 0 and score_value !=):
+   **code to execute**
+   score_value = score_value - score_value
+   
+this was I could make use of the if statement to complete my work objective, while also being able to continue on with my while statement
+without it getting stuck on if x = something:
+
+All in all this was a great assignment, and as an aside I really loved the fact you had us borrow an already existing game
+and add improvements to it as I personally learn much better "reverse-engineering" code and learning from the top down.
+
+
+~~~~~~~
+Random comments.
+
+Found a bug where I was accidentally causing the aliens to move a line ahead due to 
+offscreen aliens progressing the movement mechanic
+
+just overcame my biggest roadblock so far. I was trying to develop a respawn mechanic 
+where the aliens respawn in waves, so they wont spawn until all are destroyed and for 
+whatever reason it seemed like my program was "stuck" in my if statement, causing the 
+aliens to not be rendered correctly making it so they were frozen in place and unable 
+to move. the solution took a long time to discover but it was very simple, all i had to 
+do was alter the condition at the end of the if statement which would negate its cause, 
+freeing my program and allowing the aliens to move and spawn as they should.
