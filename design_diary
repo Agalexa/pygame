@@ -1,0 +1,5 @@
+Pygame space invaders
+
+Found a bug where I was accidentally causing the aliens to move a line ahead due to offscreen aliens progressing the movement mechanic
+
+just overcame my biggest roadblock so far. I was trying to develop a respawn mechanic where the aliens respawn in waves, so they wont spawn until all are destroyed and for whatever reason it seemed like my program was "stuck" in my if statement, causing the aliens to not be rendered correctly making it so they were frozen in place and unable to move. the solution took a long time to discover but it was very simple, all i had to do was alter the condition at the end of the if statement which would negate its cause, freeing my program and allowing the aliens to move and spawn as they should.
